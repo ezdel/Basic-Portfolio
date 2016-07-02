@@ -1,54 +1,71 @@
 body {
-	background-color: #ffffff;
+	background-image: url("../images/concrete_seamless.png");
+	background-attachment: fixed;
 }
 
 nav {
 	background-color: #ffffff;
 	border-bottom: 2px solid #cccccc;
-	height: 90px;
-	padding: 0 40px 0 40px;
+	height: 30px;
+	padding: 30px;
+	position: relative;
 }
 
 ul {
 	list-style-type: none;
 	padding: 0;
-	overflow: hidden;
+	z-index: 1;
+	margin-right: 50px;
+
+	
 }
 
 li a {
 	text-decoration: none;
 	display: inline-block;
-	text-align: right;
-	padding: 10px;
-	float: left;
-	margin-right: 10px;
+	text-align: center;
 	color: #777777;
+	font-size: 16px;
+	line-height: 24px;
+	float: right;
+	margin: 0 10px 0 10px;
+
 }
 
-ul:nth-child(2) {
+li:nth-of-type(2) {
 	border-right: solid;
 	border-left: solid;
-	border-color: #777777;
+	border-color: #cccccc;
 }
 
 #name {
 	background-color: #4aaaa5;
 	color: white;
+	height: 30px;
 	padding: 30px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size:	24px;
+	position: absolute;
+	margin-left: 80px;
 	float: left;
 	clear: right;
+	z-index: 2;
 }
 
 #bio {
-	width: 65%;
+	background-color: #ffffff;
+	width: 650px;
 	padding: 30px;
-	border: 1px solid #777777;
+	border: 1px solid #cccccc;
 	display: inline-block;
 	clear: both;
-	margin-left: 0;
+	margin-left: 80px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
+span {
+	font-style: italic;
 }
 
 h2 {
@@ -58,9 +75,8 @@ h2 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: 600;
 	padding: 10px;
-	border-bottom: 1px solid #777777;
+	border-bottom: 1px solid #cccccc;
 	margin-bottom: 15px;
-	column-span: all;
 }
 
 #ez {
@@ -84,28 +100,38 @@ h3 {
 	font-size: 20px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	line-height: 30px;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 15px;
 }
 
 #connect {
+	background-color: #ffffff;
 	display: inline-block;
-	width: 28%;
 	height: 130px;
-	border: 1px solid #777777;
+	width: 240px;
+	border: 1px solid #cccccc;
 	float: right;
 	clear: left;
-	text-align: center;
-
+	padding: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
+
+#logos {
+	display: inline-block;
+}
+
 .logo {
 	height: 62px;
 	width: 62px;
 	float: left;
+	margin: 5px;
+
 }
 
 footer {
 	text-align: center;
 	margin: 0;
-	color: #777777;
 	background-color: #666666;
 	padding: 38px;
 	border-top: 10px solid #4aaaa5;
@@ -114,33 +140,42 @@ footer {
 h6 {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 14px;
+	color: #777777;
 }
 
 #contact {
-	width: 65%;
+	background-color: #ffffff;
+	width: 650px;
 	display: inline-block;
 	padding: 30px;
-	border: 1px solid #777777;
+	border: 1px solid #cccccc;
+	margin-left: 80px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	clear: both;
 }
 
 input, textarea {
 	width: 100%;
 	font-size: 16px;
 	line-height: 24px;
+	margin-bottom: 12px;
 }
 
 label {
 	font-size: 18px;
 	line-height: 27px;
-	margin: 15px 0 15px 0;
 }
 
 #portfolio {
-	width: 65%;
+	background-color: #ffffff;
+	width: 650px;
 	display: inline-block;
-	column-count: 1;
 	padding: 30px;
-	border: 1px solid #777777;
+	border: 1px solid #cccccc;
+	margin-left: 80px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .container {
